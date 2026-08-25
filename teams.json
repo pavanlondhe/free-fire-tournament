@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1787681779612-a19l3",
+    "teamName": "marloboro",
+    "captain": "pavan",
+    "phone": "9049470653",
+    "players": [
+      "suyash",
+      "aniket",
+      "aman"
+    ],
+    "status": "approved",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-25T18:16:19.612Z"
+  },
+  {
+    "id": "1787681925441-dfe34",
+    "teamName": "btech wale",
+    "captain": "vedant",
+    "phone": "776545423",
+    "players": [
+      "bhagwan",
+      "raj",
+      "shri"
+    ],
+    "status": "rejected",
+    "roomId": "685234687",
+    "roomPassword": "478",
+    "points": 0,
+    "registeredAt": "2026-08-25T18:18:45.441Z"
+  },
+  {
+    "id": "1787682222951-caxrb",
+    "teamName": "ganster boy",
+    "captain": "abhi",
+    "phone": "9049470653",
+    "players": [
+      "vivek",
+      "pavan",
+      "purushottam"
+    ],
+    "status": "approved",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-25T18:23:42.951Z"
+  },
+  {
+    "id": "1787683521310-ofrbf",
+    "teamName": "shoter",
+    "captain": "abhi",
+    "phone": "7643676776",
+    "players": [
+      "pavan",
+      "vvs",
+      "om"
+    ],
+    "status": "approved",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-25T18:45:21.310Z"
+  }
+]

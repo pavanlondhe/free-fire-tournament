@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ganapati Special Free Fire tournament registration and live leaderboard.">
+	<title>Ganapati Special | FF Arena</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+	<div class="noise"></div>
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Ganapati Special home"><span class="brand-mark">FF</span><span>ARENA<small>GANAPATI SPECIAL</small></span></a>
+		<button class="menu-toggle" aria-label="Toggle navigation">MENU</button>
+		<nav class="main-nav"><a class="nav-admin" href="#register">Register <span>+</span></a><a href="#home">Overview</a><details style="position:relative"><summary style="color:#92959d;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:.8px;list-style:none;text-transform:uppercase">Explore <span style="color:#ff4d24;font-size:17px;margin-left:5px">+</span></summary><div style="position:absolute;right:0;top:32px;z-index:8;min-width:145px;padding:8px;background:#171a20;border:1px solid #2b3038;box-shadow:0 12px 30px #08090bcc"><a href="#tournament" style="display:block;padding:10px;color:#f5f2ed">Event details</a><a href="#leaderboard" style="display:block;padding:10px;color:#f5f2ed">Standings</a><a href="#rules" style="display:block;padding:10px;color:#f5f2ed">Rules</a><a href="#contact" style="display:block;padding:10px;color:#f5f2ed">Contact</a></div></details><a class="nav-admin" href="/admin.html">Admin <span>+</span></a></nav>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="hero-copy reveal"><p class="eyebrow"><span class="live-dot"></span> Ganapati Special / registrations open</p><h1>GANAPATI<br><em>SPECIAL</em></h1><p class="hero-lede">Free Fire squad battle · Enter the Battle. Build Your Squad. Become the Champion.</p><div class="hero-actions"><a class="button button-primary" href="#register">Register your team <span>-></span></a><a class="button button-ghost" href="#tournament">View tournament <span>+</span></a></div></div>
+			<div class="hero-art" aria-hidden="true"><div class="target-ring ring-one"></div><div class="target-ring ring-two"></div><div class="hero-chip chip-top">FF / 04</div><div class="hero-chip chip-bottom">BATTLE<br><strong>ROYAL</strong></div><div class="crosshair">+</div></div>
+			<div class="scroll-cue">SCROLL TO ENTER <span></span></div>
+		</section>
+
+		<section class="stat-strip" id="tournament"><div><small>PRIZE POOL</small><strong>Rs. 1,000</strong></div><div><small>ENTRY FEE</small><strong>Rs. 199 <i>/ squad</i></strong></div><div><small>BATTLE DATE</small><strong>01 SEP 2026</strong></div><div><small>FORMAT</small><strong>Squad / BR</strong></div><div class="status-block"><span class="status-dot"></span><small>STATUS</small><strong>REGISTRATIONS OPEN</strong></div></section>
+		<div class="room-banner" id="room-banner"><span class="live-dot"></span><div><small>NEXT DROP / LOBBY ACCESS</small><strong>Room details will be published soon.</strong></div></div>
+
+		<section class="content-section overview"><div class="section-intro reveal"><p class="eyebrow">01 / The mission</p><h2>ONE DROP.<br><span>FOUR PLAYERS.</span><br>NO EXCUSES.</h2><p>FF Arena is where the sharpest squads in the region meet. Bring your best rotations, cleanest comms, and a hunger for the top spot.</p></div><div class="info-grid reveal"><article class="info-card accent-card"><span class="card-number">01</span><h3>Squad format</h3><p>Build a four-player squad and fight through a competitive Battle Royale lobby.</p><b>4 PLAYERS / TEAM</b></article><article class="info-card"><span class="card-number">02</span><h3>Check-in</h3><p>Lobby details are shared with approved captains before game time.</p><b>30 MINUTES PRIOR</b></article><article class="info-card"><span class="card-number">03</span><h3>Champion's cut</h3><p>Top placements split the prize pool. Every point changes the final story.</p><b>POINTS + PLACEMENT</b></article></div></section>
+
+		<section class="content-section register-section" id="register"><div class="section-intro"><p class="eyebrow">02 / Lock in your squad</p><h2>READY TO<br><span>DROP IN?</span></h2><p>Registration takes less than two minutes. Your captain will receive all lobby updates.</p></div><form id="registration-form" class="arena-form"><div class="form-heading"><span>TEAM REGISTRATION</span><small>ALL FIELDS REQUIRED</small></div><label>Team name<input name="teamName" required maxlength="32" placeholder="e.g. NIGHT RAIDERS"></label><div class="form-row"><label>Captain name<input name="captain" required maxlength="40" placeholder="Full name"></label><label>Captain mobile<input name="phone" required pattern="[0-9+() -]{7,20}" placeholder="+91 00000 00000"></label></div><div class="form-row"><label>Player 2<input name="player2" required maxlength="40" placeholder="Full name"></label><label>Player 3<input name="player3" required maxlength="40" placeholder="Full name"></label></div><label>Player 4<input name="player4" required maxlength="40" placeholder="Full name"></label><button class="button button-primary submit-button" type="submit">Submit squad <span>-></span></button><p class="form-note">By registering, your squad agrees to the FF Arena rules and fair-play policy.</p></form></section>
+
+		<section class="content-section leaderboard-section" id="leaderboard"><div class="section-heading"><div><p class="eyebrow">03 / Live standings</p><h2>THE <span>LEADERBOARD</span></h2></div><span class="refresh-label"><i class="live-dot"></i> LIVE DATA</span></div><div class="table-wrap"><table><thead><tr><th>RANK</th><th>TEAM</th><th>CAPTAIN</th><th>STATUS</th><th>POINTS</th></tr></thead><tbody id="leaderboard-body"><tr><td colspan="5" class="loading">Loading standings...</td></tr></tbody></table></div></section>
+
+		<section class="content-section rules-section" id="rules"><div class="section-intro"><p class="eyebrow">04 / Code of combat</p><h2>PLAY<br><span>WITH HONOR.</span></h2></div><div class="rules-list"><div><span>01</span><h3>Full squad only</h3><p>Every registered team must field four players. Substitutions need admin approval.</p></div><div><span>02</span><h3>Respect the clock</h3><p>Check in 30 minutes before the scheduled drop. Late arrivals risk disqualification.</p></div><div><span>03</span><h3>Clean play</h3><p>Any cheats, exploits, teaming, or unsportsmanlike behavior means immediate removal.</p></div><div><span>04</span><h3>Final call</h3><p>Admins review disputes with match evidence. Their decision is final.</p></div></div></section>
+		<section class="contact-band" id="contact" style="background:#f0a33a"><div><p class="eyebrow">Ganapati Special / official contact</p><h2>YOUR SQUAD.<br>OUR <span>SUPPORT.</span></h2><p style="margin:24px 0 0;font-size:13px;line-height:1.9"><strong>Organizer:</strong> Pavan Londhe<br><strong>Mobile:</strong> <a href="tel:9049470653" style="color:inherit">9049470653</a><br><strong>Email:</strong> <a href="mailto:londhepavan08@gmail.com" style="color:inherit">londhepavan08@gmail.com</a></p></div><a class="button button-ghost" href="mailto:londhepavan08@gmail.com">Contact organizer <span>-></span></a></section>
+	</main>
+	<footer><a class="brand" href="#home"><span class="brand-mark">FF</span><span>ARENA<small>GANAPATI SPECIAL</small></span></a><p>Built for the bold. Ganapati Special / 2026</p><p>© FF Arena. Fair play, always.</p></footer>
+	<div id="toast" class="toast" role="status"></div>
+	<script src="public/script.js"></script>
+</body>
+</html>

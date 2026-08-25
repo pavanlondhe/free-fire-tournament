@@ -1,0 +1,8 @@
+{
+  "name": "ff-arena",
+  "version": "1.0.0",
+  "description": "Free Fire tournament management system",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.21.2" }
+}
