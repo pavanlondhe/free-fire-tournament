@@ -62,5 +62,69 @@
     "roomPassword": "",
     "points": 0,
     "registeredAt": "2026-08-25T18:45:21.310Z"
+  },
+  {
+    "id": "1787687194285-g227q",
+    "teamName": "pbond",
+    "captain": "ayush",
+    "phone": "346356546456",
+    "players": [
+      "hhh",
+      "jg",
+      "hag"
+    ],
+    "status": "rejected",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-25T19:46:34.285Z"
+  },
+  {
+    "id": "1787688174780-hi2y4",
+    "teamName": "jfjg",
+    "captain": "kghk",
+    "phone": "87868768568",
+    "players": [
+      "hjkh",
+      "gbjh76897897",
+      "gjh"
+    ],
+    "status": "rejected",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-25T20:02:54.780Z"
+  },
+  {
+    "id": "1787845022170-zl2jk",
+    "teamName": "marloboro0.2",
+    "captain": "pavan",
+    "phone": "2458070458",
+    "players": [
+      "ajju",
+      "ved",
+      "shivam"
+    ],
+    "status": "approved",
+    "roomId": "",
+    "roomPassword": "",
+    "points": 0,
+    "registeredAt": "2026-08-27T15:37:02.172Z"
+  },
+  {
+    "id": "1787921998021-4qhan",
+    "teamName": "dhaku gang",
+    "captain": "ajurn",
+    "phone": "8564322478",
+    "players": [
+      "amar",
+      "abhi",
+      "om"
+    ],
+    "status": "approved",
+    "roomId": "85426867",
+    "roomPassword": "12345",
+    "points": 20,
+    "registeredAt": "2026-08-28T12:59:58.021Z"
   }
 ]

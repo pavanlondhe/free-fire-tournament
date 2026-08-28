@@ -1,5 +1,6 @@
 const toast = document.getElementById('toast');
-const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:5000' : '';
+const isLocalStaticServer = ['localhost', '127.0.0.1'].includes(window.location.hostname) && window.location.port !== '5000';
+const API_BASE = window.location.protocol === 'file:' || isLocalStaticServer ? 'http://localhost:5000' : '';
 const showToast = (message, good = true) => { toast.textContent = message; toast.style.borderLeft = `3px solid ${good ? '#8dde75' : '#ff4d24'}`; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3200); };
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
 const parseResponse = async response => { const text = await response.text(); let data; try { data = JSON.parse(text); } catch { throw new Error('Server unavailable. Open the site at http://localhost:5000'); } if (!response.ok) throw new Error(data.error || 'Request failed'); return data; };
