@@ -7,3 +7,5 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 24
+      - key: ADMIN_PASSWORD
+        sync: false

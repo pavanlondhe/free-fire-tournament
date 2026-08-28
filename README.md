@@ -13,6 +13,8 @@ Open `http://localhost:5000` for the public site and `http://localhost:5000/admi
 
 Registered teams are stored in `teams.json`.
 
+Set `ADMIN_PASSWORD` in the server environment before using the admin dashboard. The public API never returns phone numbers or room credentials.
+
 ## Deploy on Render
 
 1. Create a Render account at https://render.com.
