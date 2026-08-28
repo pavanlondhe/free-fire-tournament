@@ -27,8 +27,8 @@ function validateTeam(body) {
   const format = ['solo', 'duo', 'squad'].includes(body.format) ? body.format : 'squad';
   const playerCount = { solo: 0, duo: 1, squad: 3 }[format];
   const values = { format, teamName: clean(body.teamName, 32), captain: clean(body.captain), phone: clean(body.phone, 20), players: [clean(body.player2), clean(body.player3), clean(body.player4)].slice(0, playerCount) };
-  if (!values.teamName || !values.captain || !values.phone || values.players.length !== playerCount || values.players.some(player => !player)) return { error: 'Complete every registration field.' };
-  if (!/^[0-9+() -]{7,20}$/.test(values.phone)) return { error: 'Enter a valid captain mobile number.' };
+    if (!values.teamName || !values.captain || !values.phone || values.players.length !== playerCount || values.players.some(player => !player)) return { error: 'Complete every registration field.' };
+    if (!/^[0-9+() -]{7,20}$/.test(values.phone)) return { error: 'Enter a valid captain mobile number.' };
   return values;
 }
 
